@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db8b0b24bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Projects</a></li>
+                    <li><a href="#portfolio">Social Influencing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>JAVA DEVELOPER</p>
+                <h1>Hi, I'm <span>Prashant</span><br> Choudhary from Kolkata,<br>West Bengal</h1>
+            </div>
+        </div>
+    </div>
+<!-- -------------------About------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Man-on-phone-working-from-home.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Prashant Choudhary from Kolkata,West Bengal and pursued my
+                        graduation B.Tech in Information Technology from Bengal Institute of Technology
+                        (MAKAUT) in 2024. I have 2 years of experience in Java. I have 
+                        worked on various projects using Java and its framework.I have also worked 
+                        in various project in fake news detection using Machine Learning.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Developer</span><br>Developing an Web Application</li>
+                            <li><span>Web Development</span><br>Building a Web Pages using HTML CSS JS</li>
+                            <li><span>Python Developer</span><br>Security Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>March 2023 - April 2023</span><br>Oasis Infobyte</li>
+                            <li><span>May 2023 - June 2023</span><br>Sync Intern<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>2018<span></span><br>The Aryans School</li>
+                            <li>2020<span></span><br>Indian Public School</li>
+                            <li>2020 - 2024<span></span><br>Bengal Institute of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------services----------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Electricity Billing System</h2>
+                <p>Electricity Billing System is a web application that allows users to manage their electricity bills 
+                    and payments. It provides a user-friendly interface for customers to view their bills, make payments,
+                    and track their payment history. The system also allows administrators to manage customer accounts,
+                    generate reports, and monitor billing and payment activities.
+                </p>
+                <a href="https://github.com/Prashantkr04/Electricity-billing-system">Read More</a>
+            </div>
+            <div>
+                <i class="fas fa-crop alt"></i>
+                <h2>Number Guessing Game</h2>
+                <p>Number Guessing Game is a simple game where the user has to guess a number
+                    between 1 and 100. The game provides hints to the user to help them guess the
+                    number correctly. The game also keeps track of the user's score and displays it
+                    at the end of the game.
+                </p>
+                <a href="https://github.com/Prashantkr04/OIBSIP1/blob/main/NumberGuessingGame.java">Read More</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Fake News Detection Using Machine Learning</h2>
+                <p>Fake News Detection Using Machine Learning is a project that uses machine learning algorithms to detect
+                    fake news. The project involves collecting and labeling a dataset of news articles, training a machine
+                    learning model, and testing the model on new data to determine its accuracy. The project also involves
+                    analyzing the results and making recommendations for improving the model's performance.
+                </p>
+                <a href="https://www.simplilearn.com/tutorials/machine-learning-tutorial/how-to-create-a-fake-news-detection-system">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------portfolio-------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Social Influencing </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.jpg">
+                <div class="layer">
+                    <h3>Job Search App</h3>
+                    <p>Design and develop a job search app that allows users to search for jobs, apply
+                        for jobs, and manage their job applications. The app should have a user-friendly interface
+                        and be easy to use.
+                    </p>
+                    <a href="https://www.google.com/search?q=current+it+jobs+for+freshers+in+india&oq=current+it+jobs+for+freshers+in+&gs_lcrp=EgZjaHJvbWUqBwgCECEYoAEyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRiSAzIHCAUQIRiSAzIHCAYQIRiSAzIHCAcQIRiSAzIHCAgQIRiSAzIHCAkQIRifBdIBCTMwNzczajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.jpg">
+                <div class="layer">
+                    <h3>Game App</h3>
+                    <p>Design and develop a game app that allows users to play games, compete with other
+                        users, and earn rewards. The app should have a user-friendly interface and be easy to use
+                    </p>
+                    <a href="https://poki.com/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Design and develop a social media app that allows users to create profiles, share
+                        content, and interact with other users. The app should have a user-friendly interface and be easy
+                        to use.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.web_view_mohammed.ad.webview_app&hl=en_IN"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://en.wikipedia.org/wiki/Social_influence" class="btn">See More</a>
+    </div>
+</div>
+<!-- ---------------contact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>prashantchoudhary21404@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9903777067</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/prashangoldi?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/Prashan10898010?t=2p3MnEy_quYNuhxZL8nksA&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/___heart_hacker_04?igsh=MTN3MGd2Z2pxdjN4cg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/prashant-choudhary-a952b520b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1TmO0HZs_mD9GPU15vR8Y-kKZRm2_can5/view?usp=drive_link" download class="btn btn2">Click to See My Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Prashant. </p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzAGdSSeoG75F8or8P7IGAFVm-dRbWCsnOGogLzrrHQPIxIpc5aW8FhzRVN7tzc6DRR/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
